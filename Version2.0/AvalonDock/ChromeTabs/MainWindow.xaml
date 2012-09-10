@@ -1,0 +1,21 @@
+﻿<Window x:Class="ChromeTabs.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:avalondock="http://avalondock.codeplex.com"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <avalondock:DockingManager x:Name="DockManager" >
+            <avalondock:LayoutRoot>
+                <avalondock:LayoutPanel>
+                    <avalondock:LayoutAnchorablePane>
+                        <avalondock:LayoutAnchorable x:Name="wtf" ContentId="tab1" Title="Tab 1" >
+                        </avalondock:LayoutAnchorable>
+                        <avalondock:LayoutAnchorable ContentId="tab2" Title="Tab 2">
+                        </avalondock:LayoutAnchorable>
+                        <avalondock:LayoutAnchorable ContentId="tab3" Title="Tab 3">
+                        </avalondock:LayoutAnchorable>
+                    </avalondock:LayoutAnchorablePane>
+                </avalondock:LayoutPanel>
+            </avalondock:LayoutRoot>
+        </avalondock:DockingManager>
+    </Grid>
+</Window>
